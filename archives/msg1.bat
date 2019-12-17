@@ -5,7 +5,6 @@ title moniteur de message 1
 
 :debut
 cls
-for /f %%a in (conv1.arch) do set conv = %%a
-echo -%conv%
-batbox /w 100
+type conv1.arch
+batbox /w 1000
 goto debut

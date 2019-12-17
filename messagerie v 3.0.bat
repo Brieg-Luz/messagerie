@@ -58,7 +58,7 @@ cls
 echo Règles du micrologiciel
 echo - Il est interdit de contourner la sécurite intégrée sans l'accord d'un membre agréé de ECU-developpement
 echo - Il est autorisé d'insulter quelqu'un pour des résons valables
-echo - Un salon NSFW (not safe for work) est disponible pour y répendre des contenus déplacés (racistes, antiscionnistes, néo-nazisme etc...)
+echo - Un salon NSFW (not safe for work) est disponible pour y partager des contenus déplacés
 echo - il est interdit de tenter de découvrr les mots de passe des autres (vous n'y arriverez pas :-D)
 echo - La team ECU développement vous souhaite une agréable experience
 echo.
