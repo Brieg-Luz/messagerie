@@ -9,7 +9,14 @@ if not exist batbox.exe goto batinstall
 
 :debut
 cls
-echo bienvenue dans la messagerie ECU
+echo      ■■■■■■■■■    ■■■■■■■■■■   ■        ■
+echo      ■            ■            ■        ■
+echo      ■            ■            ■        ■
+echo      ■■■■         ■            ■        ■
+echo      ■            ■            ■        ■
+echo      ■            ■            ■        ■
+echo      ■■■■■■■■■    ■■■■■■■■■■   ■■■■■■■■■■
+echo.
 echo Ce programme à été créé dans un but éducatif par ECU développement.
 batbox /w 3000
 
@@ -22,6 +29,7 @@ batbox /k
 if %errorlevel% equ 99 goto connecter
 if %errorlevel% equ 105 goto inscrire
 if %errorlevel% equ 97 goto apropos
+goto acceuil
 
 :connecter
 cls
