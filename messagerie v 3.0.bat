@@ -45,10 +45,10 @@ goto connecter
 
 :correct
 cls
-for /f "tokens=2,1 delims=," %%a in (%prenom%%nom%.arch) do set pseudonyme = %%a
+for /f "tokens=1 delims=," %%a in (%prenom%%nom%.arch) do set pseudonyme=%%a
 batbox /g 60 0 /c 0XFC /d "connexion reussie" /c 0X0A
 echo.
-echo pseudonyme>trans.txt
+echo %pseudonyme%>trans.txt
 pause
 start msge.bat
 exit

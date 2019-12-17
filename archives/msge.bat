@@ -1,12 +1,11 @@
 @echo off
-chcp 65001 > nul
+chcp 65001>nul
 title choix du salon
 color 0A
-cd archives
-
-for /f "tokens=1,1,1 delims=," %%a in (trans.txt) do set pseudonyme = %%a
+pause
+for /f "tokens=1" %%a in (trans.txt) do set pseudonyme=%%a
 del "trans.txt"
-
+pause
 :acceuil
 cls
 batbox /c 0XFC /d "1, 2 ou 3 = aller au salon 1, 2 ou 3  A = aller au salon anonyme Q = quiter" /c 0X0A /k
