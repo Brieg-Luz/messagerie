@@ -29,10 +29,10 @@ set /p prenom=entrez votre prénom :
 set /p nom=entrez votre nom : 
 if not exist %prenom%%nom%.arch goto introuvable
 
-for /f "tokens=2 delims=," %%a in (%prenom%%nom%.arch) do set mdp = %%a
+for /f "tokens=2 delims=," %%a in (%prenom%%nom%.arch) do set mdp=%%a
 
 
-set /p mdp1 = entrez votre mot de passe : 
+set /p mdp1=entrez votre mot de passe : 
 if %mdp% equ %mdp1% goto correct
 if %mdp% neq %mdp1% goto incorrect
 
@@ -104,6 +104,7 @@ echo Team : ECU développement
 echo pour : Brieg Luz dans un but expérimental
 echo distribution : non distribué
 echo alphabet de la version : UTF-8 65001
+echo version de git au moment du développement : git version 2.24.1.windows.2
 pause
 goto acceuil
 
